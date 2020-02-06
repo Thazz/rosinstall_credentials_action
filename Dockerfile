@@ -1,6 +1,6 @@
 FROM debian:latest
 
-LABEL com.github.actions.name="rosinstall-credentials-action"
+LABEL com.github.actions.name="rosinstall_credentials_action"
 LABEL com.github.actions.description="Inject credentials to rosinstall file in order to clone private repositories"
 LABEL com.github.actions.icon="terminal"
 LABEL com.github.actions.color="gray-dark"
