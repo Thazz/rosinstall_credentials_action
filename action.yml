@@ -1,0 +1,16 @@
+name: Rosinstall Credentials
+description: Inject credentials to rosinstall file in order to clone private repositories
+author: Gregor Seljak
+branding:
+  icon: terminal
+  color: gray-dark
+runs:
+  using: "docker"
+  image: "Dockerfile"
+inputs:
+  rosinstall_file:
+    description: "Name of rosinstall file relative to repository's root folder"
+    required: true
+  credentials:
+    description: "Github credentials in form of <username>:<password>. You should store credentials as repository's secret"
+    required: true
